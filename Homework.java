@@ -39,6 +39,7 @@ public class Homework {
 
         while (true) {
             String[] entryValues = scanner.nextLine().split(" ");
+            entryValues[0] = entryValues[0].toLowerCase();
             if (!checkCommands(entryValues[0])) {
                 System.out.println("There's no such command. Try again.");
                 continue;
